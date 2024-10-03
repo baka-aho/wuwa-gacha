@@ -68,7 +68,7 @@ fetch(
     if (elements.length === 4) {
       totalPulls = totalPulls + currentPity;
       var astrites = totalPulls * 160;
-      var fourStars = Math.ceil(totalPulls / 10 + 6);
+      var fourStars = Math.ceil(totalPulls / 10 - 14);
       var fiveStars = characters.length;
 
       // Update the values

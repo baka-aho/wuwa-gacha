@@ -4,162 +4,181 @@
       "name": "Shorekeeper",
       "image": "/assets/luckdraw/shorekeeper.webp",
       "value": 1,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Shorekeeper",
       "image": "/assets/luckdraw/shorekeeper.webp",
       "value": 72,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Jianxin",
-      "image": "/assets/luckdraw/Jianxin.webp",
+      "image": "/assets/luckdraw/jianxin.webp",
       "value": 23,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Shorekeeper",
       "image": "/assets/luckdraw/shorekeeper.webp",
       "value": 29,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Calcharo",
       "image": "/assets/luckdraw/calcharo.webp",
       "value": 68,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Shorekeeper",
       "image": "/assets/luckdraw/shorekeeper.webp",
       "value": 73,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Shorekeeper",
       "image": "/assets/luckdraw/shorekeeper.webp",
       "value": 6,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Lingyang",
-      "image": "/assets/luckdraw/linyang.webp",
+      "image": "/assets/luckdraw/lingyang.webp",
       "value": 43,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Shorekeeper",
       "image": "/assets/luckdraw/shorekeeper.webp",
       "value": 69,
-      "pullno": 1,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Calcharo",
       "image": "/assets/luckdraw/calcharo.webp",
       "value": 71,
-      "pullno": 2,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Changli",
       "image": "/assets/luckdraw/changli.webp",
       "value": 39,
-      "pullno": 3,
       "date": "2024-08-15 12:41:17"
     },
     {
       "name": "Jinhsi",
       "image": "/assets/luckdraw/jinhsi.webp",
+      "value": 29,
+      "date": "2024-06-29 10:38:01"
+    },
+    {
+      "name": "Calcharo",
+      "image": "/assets/luckdraw/calcharo.webp",
+      "value": 2,
+      "date": "2024-06-29 10:37:44"
+    },
+    {
+      "name": "Jinhsi",
+      "image": "/assets/luckdraw/jinhsi.webp",
+      "value": 67,
+      "date": "2024-06-29 10:37:29"
+    },
+    {
+      "name": "Jinhsi",
+      "image": "/assets/luckdraw/jinhsi.webp",
+      "value": 18,
+      "date": "2024-06-29 10:36:59"
+    },
+    {
+      "name": "Jinhsi",
+      "image": "/assets/luckdraw/jinhsi.webp",
+      "value": 52,
+      "date": "2024-06-29 10:36:48"
+    },
+    {
+      "name": "Encore",
+      "image": "/assets/luckdraw/encore.webp",
+      "value": 48,
+      "date": "2024-06-29 10:35:01"
+    },
+    {
+      "name": "Jinhsi",
+      "image": "/assets/luckdraw/jinhsi.webp",
+      "value": 27,
+      "date": "2024-06-29 10:34:26"
+    },
+    {
+      "name": "Jinhsi",
+      "image": "/assets/luckdraw/jinhsi.webp",
       "value": 30,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-29 10:33:51"
     },
     {
       "name": "Yinlin",
       "image": "/assets/luckdraw/yinlin.webp",
       "value": 71,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:49:10"
     },
     {
-      "name": "Verina",
+      "name": "Encore",
       "image": "/assets/luckdraw/verina.webp",
       "value": 67,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:48:20"
     },
     {
       "name": "Yinlin",
       "image": "/assets/luckdraw/yinlin.webp",
       "value": 19,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:47:21"
     },
     {
       "name": "Jianxin",
       "image": "/assets/luckdraw/jianxin.webp",
       "value": 44,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:47:07"
     },
     {
       "name": "Yinlin",
       "image": "/assets/luckdraw/yinlin.webp",
       "value": 68,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:46:33"
     },
     {
       "name": "Calcharo",
       "image": "/assets/luckdraw/calcharo.webp",
       "value": 52,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:45:50"
     },
     {
       "name": "Yinlin",
       "image": "/assets/luckdraw/yinlin.webp",
       "value": 7,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:44:38"
     },
     {
       "name": "Yinlin",
       "image": "/assets/luckdraw/yinlin.webp",
       "value": 44,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:44:23"
     },
     {
       "name": "Verina",
       "image": "/assets/luckdraw/verina.webp",
       "value": 20,
-      "pullno": 4,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:43:04"
     },
     {
       "name": "Yinlin",
       "image": "/assets/luckdraw/yinlin.webp",
       "value": 71,
-      "pullno": 5,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:41:53"
     },
     {
       "name": "Jianxin",
       "image": "/assets/luckdraw/jianxin.webp",
       "value": 10,
-      "pullno": 6,
-      "date": "2024-08-15 12:41:17"
+      "date": "2024-06-15 12:41:17"
     }
   ]
 }

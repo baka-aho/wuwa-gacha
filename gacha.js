@@ -86,25 +86,34 @@ fetch(
     // Clear existing rows
     tableBody.innerHTML = "";
 
-    // Create new rows based on the characters array
+    // Step 1: Initialize the accumulated total
+    let accumulatedPullNo = 0;
+
+    // Step 2: Loop through characters in reverse order to calculate accumulated pullno
+    for (let i = characters.length - 1; i >= 0; i--) {
+      accumulatedPullNo += characters[i].value; // Accumulate pullno
+      characters[i].pullno = accumulatedPullNo; // Assign accumulated pullno to character
+    }
+
+    // Step 3: Now create new rows based on the updated characters array
     characters.forEach((item) => {
       const row = document.createElement("tr");
       row.className =
         "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted";
 
       row.innerHTML = `
-        <td class="p-4 align-middle py-2 sm:py-3">${item.pullno}</td>
-        <td class="p-4 align-middle py-2 sm:py-3">
-            <div class="flex items-center justify-center gap-3 xsm:w-fit">
-                <div class="h-[24px] w-[24px] overflow-clip rounded-full">
-                    <img alt="${item.name}" loading="lazy" width="24" height="24" src="${item.image}" style="color: transparent;">
-                </div>
-                <p class="line-clamp-1 text-xs font-semibold text-yellow-500 sm:text-sm">${item.name}</p>
+    <td class="p-4 align-middle py-2 sm:py-3">${item.pullno}</td>
+    <td class="p-4 align-middle py-2 sm:py-3">
+        <div class="flex items-center justify-center gap-3 xsm:w-fit">
+            <div class="h-[24px] w-[24px] overflow-clip rounded-full">
+                <img alt="${item.name}" loading="lazy" width="24" height="24" src="${item.image}" style="color: transparent;">
             </div>
-        </td>
-        <td class="p-4 align-middle text-end sm:py-3 sm:text-start">${item.value}</td>
-        <td class="p-4 align-middle hidden text-right font-mono sm:py-4 xl:table-cell"><p>${item.date}</p></td>
-      `;
+            <p class="line-clamp-1 text-xs font-semibold text-yellow-500 sm:text-sm">${item.name}</p>
+        </div>
+    </td>
+    <td class="p-4 align-middle text-end sm:py-3 sm:text-start">${item.value}</td>
+    <td class="p-4 align-middle hidden text-right font-mono sm:py-4 xl:table-cell"><p>${item.date}</p></td>
+  `;
 
       // Append the new row to the table body
       tableBody.appendChild(row);

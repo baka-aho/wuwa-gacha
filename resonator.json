@@ -1,0 +1,67 @@
+{
+  "characters": [
+    {
+      "name": "Shorekeeper",
+      "image": "/assets/luckdraw/shorekeeper.webp",
+      "value": 69,
+      "pullno": 1,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Calcharo",
+      "image": "/assets/luckdraw/calcharo.webp",
+      "value": 71,
+      "pullno": 2,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Changli",
+      "image": "/assets/luckdraw/changli.webp",
+      "value": 39,
+      "pullno": 3,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Jinhsi",
+      "image": "/assets/luckdraw/jinhsi.webp",
+      "value": 30,
+      "pullno": 4,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Yinlin",
+      "image": "/assets/luckdraw/yinlin.webp",
+      "value": 7,
+      "pullno": 4,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Yinlin",
+      "image": "/assets/luckdraw/yinlin.webp",
+      "value": 44,
+      "pullno": 4,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Verina",
+      "image": "/assets/luckdraw/verina.webp",
+      "value": 20,
+      "pullno": 4,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Yinlin",
+      "image": "/assets/luckdraw/yinlin.webp",
+      "value": 71,
+      "pullno": 5,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Jianxin",
+      "image": "/assets/luckdraw/jianxin.webp",
+      "value": 10,
+      "pullno": 6,
+      "date": "2024-08-15 12:41:17"
+    }
+  ]
+}

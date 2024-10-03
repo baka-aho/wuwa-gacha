@@ -2,25 +2,12 @@
 var elements = document.querySelectorAll(
   "div.flex.w-full.flex-1.items-center.justify-between.gap-2.text-center p.text-xl.font-bold"
 );
-
-if (elements.length === 4) {
-  var totalPulls = 100;
-  var astrites = totalPulls * 160;
-  var fourStars = 16;
-  var fiveStars = 2;
-
-  // Update the values
-  elements[0].textContent = totalPulls.toLocaleString();
-  elements[1].textContent = astrites.toLocaleString();
-  elements[2].textContent = fourStars.toLocaleString();
-  elements[3].textContent = fiveStars.toLocaleString();
-} else {
-  console.error("Expected 4 elements but found:", elements.length);
-}
+var currentPity = 5;
+var totalPulls = 0;
 
 // Fetch the JSON data from the URL
 fetch(
-  "https://raw.githubusercontent.com/baka-aho/gacha-history/refs/heads/main/resonator.json"
+  "https://raw.githubusercontent.com/baka-aho/wuwa-gacha/refs/heads/main/resonator.json"
 )
   .then((response) => {
     if (!response.ok) {
@@ -38,6 +25,7 @@ fetch(
 
     // Create new character elements based on the fetched JSON data
     characters.forEach((character) => {
+      totalPulls += character.value;
       const characterDiv = document.createElement("div");
       characterDiv.className = "relative h-16 w-16 place-self-center";
 
@@ -60,10 +48,10 @@ fetch(
       badge.className = "";
 
       // Set the class of the badge based on its value
-      if (character.value < 30) {
+      if (character.value < 60 && character.value > 39) {
         badge.className =
           "rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-yellow-700 text-white hover:bg-yellow-700/80 absolute -bottom-1 -right-1 flex aspect-square w-7 items-center justify-center";
-      } else if (character.value > 60) {
+      } else if (character.value > 59) {
         badge.className =
           "rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80 absolute -bottom-1 -right-1 flex aspect-square w-7 items-center justify-center";
       } else {
@@ -75,6 +63,22 @@ fetch(
       characterDiv.appendChild(badge);
       container.appendChild(characterDiv);
     });
+
+    // Update the total pulls and astrites
+    if (elements.length === 4) {
+      totalPulls = totalPulls + currentPity;
+      var astrites = totalPulls * 160;
+      var fourStars = Math.ceil(totalPulls / 10 + 6);
+      var fiveStars = characters.length;
+
+      // Update the values
+      elements[0].textContent = totalPulls.toLocaleString();
+      elements[1].textContent = astrites.toLocaleString();
+      elements[2].textContent = fourStars.toLocaleString();
+      elements[3].textContent = fiveStars.toLocaleString();
+    } else {
+      console.error("Expected 4 elements but found:", elements.length);
+    }
 
     // Now update the table with the same data
     const tableBody = document.querySelector("tbody");

@@ -1,3 +1,13 @@
+const buttons = document.querySelectorAll(
+  'button[aria-label="Filter by rarity 4"]'
+);
+
+// Check if the second button exists and update its class
+if (buttons.length > 1) {
+  buttons[1].className =
+    "inline-flex items-center justify-center whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground rounded-md px-3 h-7 gap-1 text-sm font-semibold";
+}
+
 var elements = document.querySelectorAll(
   "div.flex.w-full.flex-1.items-center.justify-between.gap-2.text-center p.text-xl.font-bold"
 );

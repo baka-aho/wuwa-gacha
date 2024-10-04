@@ -15,19 +15,19 @@ fetch(
     return response.json();
   })
   .then((data) => {
-    const characters = data.characters;
+    const weapons = data.weapons;
     const container = document.querySelector(".p-6.grid.gap-x-4.gap-y-2");
 
     // Clear container
     container.innerHTML = "";
 
     // Initialize total pulls
-    characters.forEach((character) => {
-      totalPulls += character.value;
+    weapons.forEach((weapon) => {
+      totalPulls += weapon.value;
 
-      // Create character div
-      const characterDiv = document.createElement("div");
-      characterDiv.className = "relative h-16 w-16 place-self-center";
+      // Create weapon div
+      const weaponDiv = document.createElement("div");
+      weaponDiv.className = "relative h-16 w-16 place-self-center";
 
       // Create image container and image
       const imgContainer = document.createElement("div");
@@ -35,24 +35,24 @@ fetch(
         "h-16 w-16 overflow-hidden rounded-full bg-muted/50";
 
       const img = document.createElement("img");
-      img.alt = character.name;
+      img.alt = weapon.name;
       img.loading = "lazy";
       img.width = 404;
       img.height = 560;
-      img.src = character.image;
+      img.src = weapon.image;
       img.style.color = "transparent";
 
       imgContainer.appendChild(img);
-      characterDiv.appendChild(imgContainer);
+      weaponDiv.appendChild(imgContainer);
 
       // Create badge
       const badge = document.createElement("div");
       badge.className = "";
 
-      if (character.value < 60 && character.value > 39) {
+      if (weapon.value < 60 && weapon.value > 39) {
         badge.className =
           "rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-yellow-700 text-white hover:bg-yellow-700/80 absolute -bottom-1 -right-1 flex aspect-square w-7 items-center justify-center";
-      } else if (character.value > 59) {
+      } else if (weapon.value > 59) {
         badge.className =
           "rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80 absolute -bottom-1 -right-1 flex aspect-square w-7 items-center justify-center";
       } else {
@@ -60,9 +60,9 @@ fetch(
           "rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-green-700 text-white hover:bg-green-700/80 absolute -bottom-1 -right-1 flex aspect-square w-7 items-center justify-center";
       }
 
-      badge.textContent = character.value;
-      characterDiv.appendChild(badge);
-      container.appendChild(characterDiv);
+      badge.textContent = weapon.value;
+      weaponDiv.appendChild(badge);
+      container.appendChild(weaponDiv);
     });
 
     // Update statistics if elements length is correct
@@ -72,7 +72,7 @@ fetch(
       var fourStars = Math.ceil(
         (totalPulls / 10) * 0.35 + (totalPulls / 10) * 0.5 * 0.5
       );
-      var fiveStars = characters.length;
+      var fiveStars = weapons.length;
 
       elements[0].textContent = totalPulls.toLocaleString();
       elements[1].textContent = astrites.toLocaleString();
@@ -106,15 +106,15 @@ fetch(
       }
     }
 
-    let averagePity = accumulatedPullNo / characters.length;
+    let averagePity = accumulatedPullNo / weapons.length;
 
     updateStatistic("Average Pity", averagePity);
 
-    // Update table with character data
+    // Update table with weapon data
     const tableBody = document.querySelector("tbody");
     tableBody.innerHTML = "";
 
-    characters.forEach((item) => {
+    weapons.forEach((item) => {
       const row = document.createElement("tr");
       row.className =
         "border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted";

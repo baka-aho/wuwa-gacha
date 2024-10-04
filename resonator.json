@@ -3,6 +3,12 @@
     {
       "name": "Shorekeeper",
       "image": "/assets/luckdraw/shorekeeper.webp",
+      "value": 68,
+      "date": "2024-08-15 12:42:23"
+    },
+    {
+      "name": "Shorekeeper",
+      "image": "/assets/luckdraw/shorekeeper.webp",
       "value": 1,
       "date": "2024-08-15 12:41:45"
     },
@@ -59,6 +65,24 @@
       "image": "/assets/luckdraw/shorekeeper.webp",
       "value": 69,
       "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Verina",
+      "image": "/assets/luckdraw/verina.webp",
+      "value": 32,
+      "date": "2024-08-15 012:40:35"
+    },
+    {
+      "name": "Changli",
+      "image": "/assets/luckdraw/changli.webp",
+      "value": 44,
+      "date": "2024-07-22 09:39:54"
+    },
+    {
+      "name": "Encore",
+      "image": "/assets/luckdraw/encore.webp",
+      "value": 48,
+      "date": "2024-07-22 09:39:26"
     },
     {
       "name": "Changli",
@@ -123,6 +147,18 @@
     {
       "name": "Jinhsi",
       "image": "/assets/luckdraw/jinhsi.webp",
+      "value": 38,
+      "date": "2024-06-29 10:39:19"
+    },
+    {
+      "name": "Verina",
+      "image": "/assets/luckdraw/verina.webp",
+      "value": 72,
+      "date": "2024-06-29 10:38:49"
+    },
+    {
+      "name": "Jinhsi",
+      "image": "/assets/luckdraw/jinhsi.webp",
       "value": 29,
       "date": "2024-06-29 10:38:08"
     },
@@ -173,6 +209,18 @@
       "image": "/assets/luckdraw/jinhsi.webp",
       "value": 30,
       "date": "2024-06-29 10:33:51"
+    },
+    {
+      "name": "Yinlin",
+      "image": "/assets/luckdraw/yinlin.webp",
+      "value": 67,
+      "date": "2024-06-15 12:50:22"
+    },
+    {
+      "name": "Lingyang",
+      "image": "/assets/luckdraw/lingyang.webp",
+      "value": 56,
+      "date": "2024-06-15 12:49:47"
     },
     {
       "name": "Yinlin",

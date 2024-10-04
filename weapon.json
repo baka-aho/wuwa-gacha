@@ -1,0 +1,94 @@
+{
+  "weapons": [
+    {
+      "name": "Stellar Symphony",
+      "image": "/assets/weapons/stellar-symphony.webp",
+      "value": 12,
+      "date": "2024-08-15 12:48:06"
+    },
+    {
+      "name": "Stellar Symphony",
+      "image": "/assets/weapons/stellar-symphony.webp",
+      "value": 45,
+      "date": "2024-08-15 12:47:49"
+    },
+    {
+      "name": "Stellar Symphony",
+      "image": "/assets/weapons/stellar-symphony.webp",
+      "value": 29,
+      "date": "2024-08-15 12:47:22"
+    },
+    {
+      "name": "Stellar Symphony",
+      "image": "/assets/weapons/stellar-symphony.webp",
+      "value": 67,
+      "date": "2024-08-15 12:46:58"
+    },
+    {
+      "name": "Stellar Symphony",
+      "image": "/assets/weapons/stellar-symphony.webp",
+      "value": 33,
+      "date": "2024-08-15 12:46:17"
+    },
+    {
+      "name": "Blazing Brilliance",
+      "image": "/assets/weapons/blazing-brilliance.webp",
+      "value": 68,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Blazing Brilliance",
+      "image": "/assets/weapons/blazing-brilliance.webp",
+      "value": 39,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Blazing Brilliance",
+      "image": "/assets/weapons/blazing-brilliance.webp",
+      "value": 21,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Blazing Brilliance",
+      "image": "/assets/weapons/blazing-brilliance.webp",
+      "value": 39,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Blazing Brilliance",
+      "image": "/assets/weapons/blazing-brilliance.webp",
+      "value": 72,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Age of Harvest",
+      "image": "/assets/weapons/ages-of-harvest.webp",
+      "value": 66,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Age of Harvest",
+      "image": "/assets/weapons/ages-of-harvest.webp",
+      "value": 37,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Age of Harvest",
+      "image": "/assets/weapons/ages-of-harvest.webp",
+      "value": 1,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Age of Harvest",
+      "image": "/assets/weapons/ages-of-harvest.webp",
+      "value": 28,
+      "date": "2024-08-15 12:41:17"
+    },
+    {
+      "name": "Age of Harvest",
+      "image": "/assets/weapons/ages-of-harvest.webp",
+      "value": 42,
+      "date": "2024-08-15 12:41:17"
+    }
+  ]
+}

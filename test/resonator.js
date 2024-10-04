@@ -6,7 +6,7 @@ var currentPity = 5;
 let totalPulls = 0;
 
 fetch(
-  "https://raw.githubusercontent.com/baka-aho/wuwa-gacha/refs/heads/main/weapon.json"
+  "https://raw.githubusercontent.com/baka-aho/wuwa-gacha/refs/heads/main/resonator.json"
 )
   .then((response) => {
     if (!response.ok) {
@@ -84,6 +84,34 @@ fetch(
 
     // Calculate win/lose statistics
     let accumulatedPullNo = 0;
+    let guaranteed = false;
+    let win = 0;
+    let lose = 0;
+
+    for (let i = characters.length - 1; i >= 0; i--) {
+      const notLimited = [
+        "Verina",
+        "Lingyang",
+        "Calcharo",
+        "Encore",
+        "Jianxin",
+      ];
+      if (guaranteed) {
+        if (!notLimited.includes(characters[i].name)) {
+          guaranteed = false;
+        }
+      } else {
+        if (!notLimited.includes(characters[i].name)) {
+          win++;
+          guaranteed = false;
+        } else {
+          lose++;
+          guaranteed = true;
+        }
+      }
+      accumulatedPullNo += characters[i].value;
+      characters[i].pullno = accumulatedPullNo;
+    }
 
     // Update statistics
     function updateStatistic(label, value) {
@@ -100,7 +128,7 @@ fetch(
           value.toLocaleString(undefined, {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
-          });
+          }) + (label === "Average Pity" ? "" : "%");
       } else {
         console.error(`Statistic with label "${label}" not found.`);
       }
@@ -109,6 +137,7 @@ fetch(
     let averagePity = accumulatedPullNo / characters.length;
 
     updateStatistic("Average Pity", averagePity);
+    updateStatistic("50/50 Wins", (win / lose) * 100);
 
     // Update table with character data
     const tableBody = document.querySelector("tbody");

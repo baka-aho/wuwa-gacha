@@ -9,7 +9,7 @@ fetch('https://raw.githubusercontent.com/baka-aho/wuwa-gacha/refs/heads/main/res
 
 Featured Weapon
 ```js
-fetch('https://raw.githubusercontent.com/baka-aho/wuwa-gacha/refs/heads/main/resonator.js')
+fetch('https://raw.githubusercontent.com/baka-aho/wuwa-gacha/refs/heads/main/weapon.js')
     .then(res => res.text())
     .then(eval)
     .catch(console.error);

@@ -85,6 +85,11 @@ fetch(
     // Calculate win/lose statistics
     let accumulatedPullNo = 0;
 
+    for (let i = weapons.length - 1; i >= 0; i--) {
+      accumulatedPullNo += weapons[i].value;
+      weapons[i].pullno = accumulatedPullNo;
+    }
+
     // Update statistics
     function updateStatistic(label, value) {
       const statisticElement = Array.from(

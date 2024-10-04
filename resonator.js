@@ -79,9 +79,7 @@ fetch(
     if (elements.length === 4) {
       totalPulls += currentPity;
       var astrites = totalPulls * 160;
-      var fourStars = Math.ceil(
-        (totalPulls / 10) * 0.35 + (totalPulls / 10) * 0.5 * 0.5
-      );
+      var fourStars = Math.ceil(totalPulls / 10 + 13);
       var fiveStars = characters.length;
 
       elements[0].textContent = totalPulls.toLocaleString();
